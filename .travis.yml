@@ -2,3 +2,13 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAJW4OZQ4RRWBJNCDA
+  secret_access_key:
+    secure: vrwn7MNaXtXXBDlsSWwuYMQJyfNauFoZVwQlF71bdHGQggHxyEIToBSDSKNNDq3yzAsJ8UB4DM623SZci/qLmVjYYF2a7u+UA+o539g4akUvfURMhhaEzFwCCrqw8DF+ZgvdxQ4ctJUdieAQzqtV96IiLSCIux8mUashrxwmY6YJQipCokc9uGRHZ+WIW4JcVQPx8tUCQMgOqqjRNjVQWHhmDAmIvrPWnpZy2zZU6nSbFFCXgshk1kO51QnTyAwY6qV3t0PHJF11w5K5aBcvMBURWENfHvWK4gqJwEc6hh6SMY8N3rsbYV07CAyTyv1T5Jr4DFV3lXuHdSFMJ7APyyLjjUtRFRBv14SrmS9qnT09E3Ji1Q49jBy//qBFreNksBHfJjTTozwsYoWIIP5GsGcn0aY62SHZQ0/i5I4qnQjdz8JZ9sHbCvuVFD3E8c1TnBckmG6SH1xpEt27Q2Emgq0XxP3i83Gh+1f0q0WIWGL2wL7LYMadelRjUPM4D6MawcHi/sAYGxUnPSVy2QHbJbWOLsQocTAa1wRqQQjoCfuB/Otpkb8Pk0U+7b8CnWe31jFFBF7c/cTOxZqfAIJjJYsCvODYoPMA95EVdr2jRUGypcy/rMIdgfcnx6qQ1V+pH5MNBvpleIplNpsOxiNhPqO3peG6QBlwDMDbwHHKByw=
+  bucket: deploy-weeia
+  upload-dir: gradzki/webAPP
+  acl: public_read
+  on:
+    repo: marcingradzki/awsWEB
