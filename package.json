@@ -1,0 +1,25 @@
+{
+  "name": "aws_web",
+  "version": "1.0.0",
+  "description": "aws_web",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcingradzki/awsWEB.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Marcin G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcingradzki/awsWEB/issues"
+  },
+  "homepage": "https://github.com/marcingradzki/awsWEB#readme"
+}
