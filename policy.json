@@ -1,0 +1,8 @@
+{	"expiration" : {"day":1},
+	"conditions": [ ["starts-with", "$key", "marcin.gradzki/"],
+    				 {"bucket": "gradzki"},
+    				 {"acl": "private"},
+    				 {"success_action_redirect": "gradzkiELB-750216897.us-west-2.elb.amazonaws.com/list"},//----------------------------
+    				 ["content-length-range", 0, 1048576]
+    				]
+}
