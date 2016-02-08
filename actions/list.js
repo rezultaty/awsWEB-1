@@ -2,7 +2,7 @@ var helpers = require("../helpers");
 var template = "list.ejs";
 var AWS = require("aws-sdk");
 var configFilePath = "config.json";
-var prefix = "marcin.gradzki";
+var prefix = "mateusz.mazurek";
 
 var removeRoot = function(arr){
 	var newArr = [];
@@ -18,7 +18,7 @@ exports.action = function(request, callback) {
 
 	AWS.config.loadFromPath(configFilePath);
 	var params = {
-		Bucket: 'deploy-weeia/gradzki/webAPP',
+		Bucket: 'lab4-weeia',
 		Prefix: prefix
 	};
 	var s3 = new AWS.S3();
