@@ -19,7 +19,7 @@ exports.action = function(request, callback) {
 	helpers.getCurrentDomain(function(ip){
 		console.log("Detected current domain: "+ip);
 		var fields = s3Form.generateS3FormFields(ip.trim());
-		callback(null, {template: template, params:{fields:s3Form.addS3CredientalsFields(fields, awsConfig, ip.trim()) , bucket:"deploy-weeia"}});
+		callback(null, {template: template, params:{fields:s3Form.addS3CredientalsFields(fields, awsConfig, ip.trim()) , bucket:"lab4-weeia"}});
 	});
 
 
