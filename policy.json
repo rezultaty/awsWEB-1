@@ -2,7 +2,7 @@
 	"conditions": [ ["starts-with", "$key", "gradzki/"],
     				 {"bucket": "lab4-weeia"},
     				 {"acl": "private"},
-    				 {"success_action_redirect": "gradzkiELB-1032839830.us-west-2.elb.amazonaws.com/list"},
+    				 {"success_action_redirect": "gradzkiELB-196555744.us-west-2.elb.amazonaws.com/list"},
     				 ["content-length-range", 0, 1048576]
     				]
 }
